@@ -1,0 +1,43 @@
+{
+  "name": "test-react-native",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "codecov": "^3.0.0",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-react-native": "^3.2.0",
+    "eslint-plugin-security": "^1.4.0",
+    "jest-expo": "23.0.0",
+    "react-native-scripts": "1.8.1",
+    "react-test-renderer": "16.0.0"
+  },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "node node_modules/jest/bin/jest.js --watch"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "dotenv": "^4.0.0",
+    "expo": "^23.0.4",
+    "firebase-admin": "^5.5.1",
+    "fresh": "^0.5.2",
+    "lodash": "^4.17.4",
+    "react": "16.0.0",
+    "react-native": "0.50.3",
+    "redux": "^3.7.2"
+  },
+  "peerDependencies": {
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "prop-types": "^15.5.10"
+  }
+}
