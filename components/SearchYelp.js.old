@@ -1,0 +1,47 @@
+import React from "react";
+
+import submitForm from "./formHandler";
+
+class SearchYelp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: "" };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({ value: event.target.value });
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    const searchText = this.state.value;
+    submitForm(searchText);
+  }
+
+  render() {
+    return (
+      <form className="navbar-form" role="search" onSubmit={this.handleSubmit}>
+        <div className="input-group add-on">
+          <input
+            className="form-control"
+            placeholder="Search"
+            value={this.state.value}
+            onChange={this.handleChange}
+            name="searchTerm"
+            id="searchTerm"
+            type="text"
+          />
+          <div className="input-group-btn">
+            <button className="btn btn-default">
+              <i className="glyphicon glyphicon-search" />
+            </button>
+          </div>
+        </div>
+      </form>
+    );
+  }
+}
+
+export default SearchYelp;

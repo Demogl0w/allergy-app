@@ -12,6 +12,7 @@
     "eslint-plugin-react-native": "^3.2.0",
     "eslint-plugin-security": "^1.4.0",
     "jest-expo": "23.0.0",
+    "react-devtools": "^3.0.0",
     "react-native-scripts": "1.8.1",
     "react-test-renderer": "16.0.0"
   },
@@ -29,18 +30,25 @@
   },
   "dependencies": {
     "babel-core": "^6.26.0",
+    "babel-preset-react-native": "^4.0.0",
     "dotenv": "^4.0.0",
     "expo": "^23.0.4",
     "firebase-admin": "^5.5.1",
     "fresh": "^0.5.2",
     "lodash": "^4.17.4",
+    "oauthsimple": "^0.0.1",
     "react": "16.0.0",
     "react-native": "0.50.3",
-    "redux": "^3.7.2"
+    "react-native-deprecated-custom-components": "^0.1.1",
+    "react-native-dotenv": "^0.1.0",
+    "react-navigation": "^1.0.0-beta.21",
+    "redux": "^3.7.2",
+    "yelpv3": "^1.2.1"
   },
   "peerDependencies": {
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "request": "^2.83.0"
   }
 }
